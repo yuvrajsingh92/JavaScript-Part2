@@ -1,0 +1,21 @@
+/* .lt {
+  text-decoration: line-through;
+} */
+.a {
+  height: 400px;
+  width: 80%;
+  background-color: red;
+}
+.b {
+  height: 80%;
+  width: 80%;
+  background-color: green;
+}
+.c {
+  height: 80%;
+  width: 80%;
+  background-color: yellow;
+}
+button {
+  background-color: wheat;
+}

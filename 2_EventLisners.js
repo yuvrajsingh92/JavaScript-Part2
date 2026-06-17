@@ -127,3 +127,49 @@
 //     evtmouse.style.backgroundColor = "red"
 // })
 
+// ! Event Bubbling : Event Bubble in the process in which if the element does not get an evt it will search the evt in his parents
+
+// let ul = document.querySelector("ul")
+// ul.addEventListener("click",function(evt){
+//     evt.target.classList.toggle("lt")
+// })
+
+// ! Event bubbling example
+
+// let a = document.querySelector(".a");
+// let b = document.querySelector(".b");
+// let c = document.querySelector(".c");
+// let button = document.querySelector("button");
+
+// button.addEventListener("click", function () {
+//   console.log("Button Was Clicked");
+// });
+
+// a.addEventListener(
+//   "click",
+//   function () {
+//     console.log("A Was Clicked");
+//   },
+//   true,
+// );
+// b.addEventListener("click", function () {
+//   console.log("B Was Clicked");
+// });
+// c.addEventListener("click", function () {
+//   console.log("C Was Clicked");
+// },true);
+
+// ! Character Counter
+
+// let inputs = document.querySelector("input");
+// let span = document.querySelector("span");
+
+// inputs.addEventListener("input", function () {
+//   let left = inputs.value.length;
+//   span.textContent = left;
+//   if (left > 20) {
+//     span.style.color = "red";
+//   } else {
+//     span.style.color = "black";
+//   }
+// });
