@@ -1,5 +1,15 @@
-// What is event handling
-// Any action that happend in the browser that will raise an event
+// ! What is event handling
+// ? Any action which occurce when we click,double click, hover, Etc is called event
+
+// let h1 = document.createElement("h1")
+// h1.textContent = "Hello"
+// document.body.prepend(h1)
+
+// h1.addEventListener("click",()=>{
+//     h1.textContent = "Hello Ayush"
+//     h1.style.backgroundColor = "black"
+//     h1.style.color = "White"
+// })
 
 // ! example of event : Single click
 // let event = document.querySelector(".event")
@@ -14,49 +24,62 @@
 // })
 
 // ! This is how to remove EventLisner
-// let para = document.querySelector(".event")
-// function dblclick(){
-//     para.style.color = "red"
+
+// let p = document.createElement("p")
+// p.textContent = "Ahahhhhhhhhhhh"
+// document.body.prepend(p) // ? Created p tag and add in the body
+
+// function makeRed (){
+//     p.style.color = "red" // ? We have to create function spetatliy
 // }
-// para.addEventListener ("dblclick",dblclick)
-// para.removeEventListener("dblclick", dblclick) // This is how to remove Events
+
+// p.addEventListener("dblclick",makeRed); // ? Add event lisnter
+// p.removeEventListener("dblclick",makeRed); // ? Removed Event lisner
 
 // ! input event
-// let inputText = document.querySelector(".inp")
-// inputText.addEventListener("input", function(evt){
-//     console.log(evt.data)
-// }) // .data is a inbuild function in which the input value get stores
 
-// let inputText = document.querySelector(".inp")
-// inputText.addEventListener("input", function(evt){
-//     if (evt.data !== null){
-//         console.log(evt.data)
+// let input = document.createElement("input");
+// input.placeholder = "Enter Your Name: ";
+// document.body.prepend(input);
+
+// input.addEventListener("input",(e)=>{
+//     if (e.data !== " " && e.data !== null){
+//         console.log(e.data)
 //     }
 // })
 
 // ! Change Event
-// let sel = document.querySelector(".select")
 
-// let heading3 = document.querySelector(".h3")
+// let select = document.querySelector("select")
+// let h3 = document.querySelector("h3")
 
-// sel.addEventListener("change", function(evt){
-//     console.log(evt.target.value)
-//     heading3.textContent = `Devices Selected is ${evt.target.value}`
+// select.addEventListener("change",(e)=>{
+//     console.log(e.target.value)
+//     h3.textContent = `Device Selected is ${e.target.value}`
+//     h3.style.textTransform = "capitalize"
 // })
 
 // ! keydown event
 
-// let h2 = document.querySelector(".heading2")
-// window.addEventListener("keydown", function(evt){
-//     if (evt.key === " "){
-//         h2.textContent = "SPC"
+// let h2 = document.querySelector("h2");
+// window.addEventListener("keydown", (e) => {
+//     if (e.key !== " " && e.key !== "Backspace"){
+//         h2.textContent = e.key
 //     }
-//     else{
-//         h2.textContent = evt.key
-//     }
-// })
+// });
 
 // ! This is how to make your own file button (Deep level)
+
+// let input = document.querySelector("#input");
+// let btn = document.querySelector("#btn");
+
+// btn.addEventListener("click", () => {
+//   input.click();
+// });
+
+// input.addEventListener("change",(e)=>{
+//     btn.textContent = e.target.files[0].name
+// })
 
 // let Onclick = document.querySelector(".btn");
 // let Inputfile = document.querySelector("#inputFile");
@@ -73,6 +96,7 @@
 // })
 
 // ! Submit Event
+
 // let inputs = document.querySelectorAll("input");
 // let form = document.querySelector("form");
 // let main = document.querySelector(".main");
@@ -117,15 +141,15 @@
 
 // ! Mouseover and mouseout Event
 
-// let evtmouse = document.querySelector(".mouse")
+// let main = document.querySelector(".main");
 
-// evtmouse.addEventListener("mouseover", function(){
-//     evtmouse.style.backgroundColor = "yellow"
-// })
+// main.addEventListener("mouseover", () => {
+//   main.style.backgroundColor = "yellow";
+// });
 
-// evtmouse.addEventListener("mouseout", function(){
-//     evtmouse.style.backgroundColor = "red"
-// })
+// main.addEventListener("mouseout", () => {
+//   main.style.backgroundColor = "red"; 
+// });
 
 // ! Event Bubbling : Event Bubble in the process in which if the element does not get an evt it will search the evt in his parents
 
@@ -134,7 +158,7 @@
 //     evt.target.classList.toggle("lt")
 // })
 
-// ! Event bubbling example
+// ! Event Capturing example
 
 // let a = document.querySelector(".a");
 // let b = document.querySelector(".b");
