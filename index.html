@@ -7,103 +7,25 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <h1 id="heading">Hello</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia sapiente repellendus ipsum? Nesciunt impedit consectetur, non quos adipisci assumenda ratione atque distinctio qui, officia rem corporis, ea obcaecati praesentium?</p> -->
-    <!-- <h2 id="heading1">Hello, </h2>
-    <div class="box">This a box</div>
-    <div class="box">This a box</div>
-    <div class="box">This a box</div>
-    <a href="http://www.google.com" id="anchorTag">Download here</a> -->
+    <div class="login-container">
+      <h2>Login</h2>
 
-    <!-- <ul>
-        <li class="fruits" > Apple </li>
-        <li class="fruits" > Banana </li>
-        <li class="fruits" > Mango </li>
-        <li class="fruits" > PineApple </li>
-        <li class="fruits" > Chiku </li>
-    </ul> -->
+      <form autocomplete="off">
+        <label for="email">Email</label>
+        <input id="email" placeholder="Enter your email" />
+        <span id="email_span">Your name length should be greater than 2 letter's </span>
 
-    <!-- <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias adipisci ad asperiores in velit laboriosam at ratione! Hic suscipit vel enim et fugit repellendus itaque repudiandae sint harum, consectetur impedit?</p> -->
-    <!-- 
-    <img class="img"
-      src="https://images.unsplash.com/photo-1773332611476-6ec2ba68049f?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      alt=""
-    /> -->
-    <!-- <a class="anchorTag" href="https://www.google.com/">Hello</a> -->
-    <!-- <ul>
-      <li>Apple</li>      
-      <li>Mango</li>
-      <li>Grape</li>
-    </ul> -->
-    <!-- <button class="btn" disabled="disabled">button</button> -->
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+        <span id="password_span"></span>
 
-    <!-- <div>
-      <h1>Kesa ho Ayush bhai</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi illum quae, facilis quam voluptates rem obcaecati corrupti provident voluptatem nam id minus reiciendis nobis earum voluptas modi vero atque eveniet.</p>
-    </div> -->
-
-    <!-- <ul>
-      <li>Apple</li>
-      <li>Grapes</li>
-      <li>Banana</li>
-      <li>Mango</li>
-    </ul> -->
-
-    <!-- <p class="event" >Apple</p> -->
-    <!-- <input type="text" class="inp" name="" id="" placeholder="Name"> -->
-
-    <!-- <h3 class="h3">Seleect Your Devices</h3>
-     <select name="" id="" class="select">
-      <option selected disabled>Chose Your Options</option>
-      <option value="apple">Iphone</option>
-      <option value="mi">Xiomi</option>
-      <option value="samsung">SamSung</option>
-      <option value="oppo">Oppo</option>
-     </select> -->
-
-    <!-- <h2 class="heading2">q</h2> -->
-    <!-- 
-    <input style="display: none;" type="file" name="" id="inputFile">
-    <div class="btn">
-        Upload File
-    </div> -->
-    <!-- <div class="mouse">
-      This is a div 
-     </div> -->
-    <!-- <div class="main">
-  <form action="" method="post">
-    <input type="url" placeholder="Paste Profile Image URL" required /><br>
-    <input type="text" placeholder="Enter Your Name" required /><br>
-    <input type="email" placeholder="Enter Your Email" required /><br>
-    <input type="number" placeholder="Enter Your Age" required /><br>
-    <input type="submit" value="Create Card"/><br>
-  </form>
-</div> -->
-
-    <!-- <div
-      class="box"
-      style="background-color: red; height: 300px; width: 300px"
-    ></div> -->
-
-    <!-- <ul>
-      <li>Apple</li>
-      <li>Grapes</li>
-      <li>Banana</li>
-      <li>Mango</li>
-    </ul> -->
-
-    <!-- <div class="a">
-      <div class="b">
-        <div class="c">
-          <button>Click Me</button>
-        </div>
-      </div>
-    </div> -->
-
-    <!-- Charter Counter -->
-
-    <!-- <input type="text" name="" id="" placeholder="Write Anything">
-    <h2>Length of characters : <span>0</span></h2> -->
-    <script type="module" src="2_EventLisners.js"></script>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <script type="module" src="3_FormValidation.js"></script>
   </body>
 </html>
